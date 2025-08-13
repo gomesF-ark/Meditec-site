@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta itemprop="name" content="MEDITEC - Saúde Sustentável">
+    <title>MEDITEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo-meditec.png" alt="Logo MEDITEC">
+        <div class="titulo">
+            <h1>Seja Bem-Vindo!</h1>
+            <p>O melhor da saúde que a tecnologia pode oferecer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#INICIO">Início</a></li>
+                <li><a href="#SOBRE">Sobre Nós</a></li>
+                <li><a href="#PRODUTOS">Produtos</a></li>
+                <li><a href="#FAQ">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="INICIO">
+            <h2>Populares</h2>
+            <div class="carrossel-container">
+                <button class="carrossel-btn left" onclick="scrollLeft()">&#10094;</button>
+                <div class="carrossel" id="carrossel">
+                    <img src="oximetro.jpg" alt="Oxímetro reciclado">
+                    <img src="termometro.jpg" alt="Termômetro digital sustentável">
+                    <img src="eletrocardiograma.jpg" alt="ECG compacto">
+                    <img src="nebulizador.jpg" alt="Nebulizador portátil reciclado">
+                    <img src="monitor.jpg" alt="Monitor de sinais reciclado">
+                    <img src="tensiometro.jpg" alt="Tensiômetro eletrônico reciclado">
+                </div>
+                <button class="carrossel-btn right" onclick="scrollRight()">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="SOBRE">
+            <h2>Sobre Nós</h2>
+            <p>A MEDITEC é uma startup brasileira focada em inovação sustentável na área da saúde. Reutilizamos lixo eletrônico para criar equipamentos médicos de alta qualidade e acessíveis, promovendo saúde com responsabilidade ambiental.</p>
+        </section>
+
+        <section id="PRODUTOS">
+            <h2>Nossos Produtos</h2>
+            <ul>
+                <li>Oxímetro com visor OLED reciclado</li>
+                <li>Termômetro Digital de Baixo Consumo</li>
+                <li>Monitor de Sinais Vitais Reciclado</li>
+                <li>ECG Portátil com Placa Reutilizada</li>
+                <li>Tensiômetro Eletrônico com Carcaça Sustentável</li>
+                <li>Nebulizador de Baixo Custo e Alta Eficiência</li>
+            </ul>
+        </section>
+
+        <section id="FAQ">
+            <h2>Dúvidas Frequentes</h2>
+            <ul class="faq">
+                <li><strong>Como funciona o processo de reciclagem?</strong><br>Todos os nossos produtos são feitos com componentes testados, seguros e reaproveitados de eletrônicos descartados de forma responsável.</li>
+                <li><strong>Os equipamentos têm garantia?</strong><br>Sim! Todos os produtos MEDITEC possuem 1 ano de garantia.</li>
+                <li><strong>Posso comprar como pessoa física?</strong><br>Claro! Vendemos para hospitais, clínicas, profissionais autônomos e também para o público em geral.</li>
+                <li><strong>Como posso contribuir com doações de eletrônicos?</strong><br>Você pode entrar em contato conosco e agendar a coleta ou levar até um de nossos pontos parceiros.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MEDITEC - Tecnologia e Saúde Sustentável. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const carrossel = document.getElementById("carrossel");
+
+        function scrollLeft() {
+            carrossel.scrollBy({ left: -300, behavior: "smooth" });
+        }
+
+        function scrollRight() {
+            carrossel.scrollBy({ left: 300, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>

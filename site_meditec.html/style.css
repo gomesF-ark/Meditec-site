@@ -1,0 +1,67 @@
+/* Carrossel */
+.carrossel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.carrossel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.carrossel img:hover {
+    transform: scale(1.05);
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carrossel-btn.left {
+    left: 10px;
+}
+
+.carrossel-btn.right {
+    right: 10px;
+}
+
+/* FAQ */
+#FAQ {
+    padding: 40px 20px;
+}
+
+.faq {
+    list-style: none;
+    padding: 0;
+}
+
+.faq li {
+    margin-bottom: 20px;
+    background-color: #e0f2f1;
+    padding: 15px;
+    border-radius: 8px;
+}
