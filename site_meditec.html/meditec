@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta itemprop="name" content="MEDITEC - Saúde Sustentável">
     <title>MEDITEC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site_meditec.html/style.css">
 </head>
 <body>
     <header>
@@ -85,4 +85,5 @@
         }
     </script>
 </body>
+
 </html>
